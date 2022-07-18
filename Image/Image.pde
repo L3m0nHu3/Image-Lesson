@@ -19,10 +19,10 @@ float imageX, imageY, imageWidth, imageHeight;
 size (750, 500); //Lanscape
 //
 //Population
-imageX = width;
-imageY = height;
-imageWidth = width;
-imageHeight = height;
+imageX = width*0;
+imageY = height*0;
+imageWidth = width-1; //CANVAS (0,0) means point doesn't match to rectangle, missing outline on two sides
+imageHeight = height-1;
 //
 rect(imageX, imageY, imageWidth, imageHeight); //Background image
 //image();
